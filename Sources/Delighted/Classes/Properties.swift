@@ -1,0 +1,1 @@
+../../../delighted/Classes/Properties.swift

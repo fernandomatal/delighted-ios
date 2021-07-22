@@ -20,9 +20,14 @@ enum Images: String {
     case thumbsDown = "thumbs_down"
 
     var image: UIImage? {
-        let bundle = Bundle(for: ImagesClassForBundle.self)
-        let image = UIImage(named: rawValue, in: bundle, compatibleWith: nil)
-        return image
+        let bundle: Bundle
+        #if SWIFT_PACKAGE
+        bundle = Bundle.module
+        #else
+        bundle = Bundle(for: ImagesClassForBundle.self)
+        #endif
+        
+        return UIImage(named: rawValue, in: bundle, compatibleWith: nil)
     }
 
     var templateImage: UIImage? {
