@@ -5,8 +5,8 @@ customer feedback directly in your iOS app.
 
 ## Requirements
 
-The Delighted iOS SDK requires Xcode 10.1 or later and is compatible with apps
-targeting iOS 11 or above. Please note that the SDK is designed for iPhone’s
+The Delighted iOS SDK requires Xcode 10.2 or later and is compatible with apps
+targeting iOS 12.1 or above. Please note that the SDK is designed for iPhone’s
 portrait mode. Support for other iOS devices, notably iPad, is not available at
 this time.
 
@@ -32,10 +32,10 @@ To use Delighted in your project add the following `Podfile` to your project.
 
 ``` ruby
 source "https://github.com/CocoaPods/Specs.git"
-platform :ios, "11.0"
+platform :ios, "12.1"
 use_frameworks!
 
-pod "Delighted", "~> 1.2.0"
+pod "Delighted", "~> 1.3.0"
 ```
 
 Then run:
@@ -53,7 +53,7 @@ To integrate Delighted into your Xcode project using Carthage, specify it in
 your `Cartfile`:
 
 ```
-github "delighted/delighted-ios" >= 1.2.0
+github "delighted/delighted-ios" >= 1.3.0
 ```
 
 ## Getting started
